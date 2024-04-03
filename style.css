@@ -3,8 +3,8 @@
    --cor-de-fundo: #1E1E1E;
    --branco: #FFFFFF;
    --amarelo: #FFFA83;
-   --botao-ativo: #724714;
-   --botao-inativo:#583412;
+   --botao-ativo: #f04235;
+   --botao-inativo:#ff0000;
    --texto-fundo: #000000;
    
 }
@@ -57,13 +57,16 @@ flex-direction: column;
 .botoes{
     display: block;
 }
-
+.ativos{
+   background-color: var(--botao-ativo);
+   border-bottom: var(--branco);
+}
 @media screen and (min-width: 768px) {
     .botoes{
         display: flex;
     }
     .botao:first-child{
-    border-radius: 40px 0 0 0;    
+        border-radius: 40px 40px 0 0;    
     }
     .botoa:last-child{
         border-radius: 0 40px 0 0;
